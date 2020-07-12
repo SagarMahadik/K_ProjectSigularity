@@ -37,7 +37,8 @@ import {
   ProductAdditionalInformationContainer,
   AdditionalInformation,
   MainAdditionalInformation,
-  ProductNamePriceContainer
+  ProductNamePriceContainer,
+  IconProductnameContainer
 } from 'styles/Singularity/OwnerView/ReviewDetails';
 
 import VegIcon from 'components/Singularity/ApplicationView/VegIcon.js';
@@ -84,9 +85,11 @@ const AddProductPage7 = () => {
       <FlexRowContainer width="350px">
         <ProductImage src={filesrc} />
         <MainAdditionalInformation>
+          <IconProductnameContainer width="100px">
           {isVeg ? <VegIcon /> : <NonVegIcon />}
-          <PTSansText fontSize="14px">{productName}</PTSansText>
-
+          <PTSansText fontSize="14px" style={{marginLeft:'20px'}}>{productName}</PTSansText>
+          </IconProductnameContainer> 
+          
           <ProductDescription>
             <PTSansText fontSize="12px" color="#BDBDBD">
               {productDescription}
@@ -131,7 +134,7 @@ const AddProductPage7 = () => {
                   </IconCheckBoxRound>
                   <InputLabel for={item.itemName} style={{ marginTop: '15px' }}>
                     <CheckBoxIconName>
-                      <PTSansText fontSize="16px">{item.itemName}</PTSansText>
+                      <PTSansText fontSize="16px" lineHeight="18px">{item.itemName}</PTSansText>
                     </CheckBoxIconName>
                     <CheckBoxIconName>
                       <PTSansText fontSize="16px">

@@ -69,7 +69,7 @@ const AddProductFourthPage = () => {
       <FullWidthDivider />
       <CenterAlignedColumnContainer>
         <FormSectionNameContainer style={{ marginTop: '5px' }}>
-          <PTSansText fontSize="16px" color="#DAA520">
+          <PTSansText fontSize="16px" color="#DAA520" >
             Add on
           </PTSansText>
         </FormSectionNameContainer>
@@ -89,10 +89,10 @@ const AddProductFourthPage = () => {
                   </IconCheckBoxRound>
                   <InputLabel for={item.itemName} style={{ marginTop: '15px' }}>
                     <CheckBoxIconName>
-                      <PTSansText fontSize="16px">{item.itemName}</PTSansText>
+                      <PTSansText fontSize="16px" lineHeight="18px">{item.itemName}</PTSansText>
                     </CheckBoxIconName>
                     <CheckBoxIconName>
-                      <PTSansText fontSize="16px" lineHeight="18px">
+                      <PTSansText fontSize="16px" >
                         <span>Rs. </span>
                         {item.itemPrice}
                       </PTSansText>

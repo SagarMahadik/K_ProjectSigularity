@@ -56,3 +56,10 @@ export const ProductNamePriceContainer = styled.div`
   justify-content: space-evenly;
   padding-top: 20px;
 `;
+
+export const IconProductnameContainer = styled.div`
+display: block;
+width: 150px;
+height: 30px;
+margin-left: -15px;
+`
